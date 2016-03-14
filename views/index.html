@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css">
+
+    <script src="../vendors/angular/angular.js"></script>
+    <script src="../vendors/angular-route/angular-route.js"></script>
+    <script src="../app.js"></script>
+</head>
+<body ng-app="angularRouting" ng-controller="mainController as ctrl">
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand">Angular routing example</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#home"><i class="fa fa-shield"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-shield"></i>About</a></li>
+                <li><a href="#contact"><i class="fa fa-comment"></i>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div id="main">
+    <!--angular js templating-->
+    <!--{{ctrl.message}}-->
+
+    <div ng-view>
+
+    </div>
+
+</div>
+
+</body>
+</html>

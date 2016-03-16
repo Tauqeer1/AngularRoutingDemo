@@ -7,7 +7,7 @@ angular.module('angularRouting', ['ngRoute'])
         $routeProvider
             .when('/home', {
                 templateUrl: 'home.html',
-                controller: 'mainController'
+                controller: 'homeController'
             })
             .when('/about', {
                 templateUrl: 'about.html',
@@ -18,18 +18,4 @@ angular.module('angularRouting', ['ngRoute'])
                 controller: 'contactController'
             });
 
-    }])
-    .controller('mainController', [function () {
-        var _self = this;
-
-        _self.message = "Everyone come and see how good I look";
-    }])
-    .controller('aboutController',[function(){
-        var _self = this;
-
-        _self.message = 'Look I am an about page';
-    }])
-    .controller('contactController',[function(){
-        var _self = this;
-        _self.message = 'Contact us';
     }]);
